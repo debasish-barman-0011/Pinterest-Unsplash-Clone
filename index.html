@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World's largest Photo Gallery |Unsplash & Pinterest</title>
+    <!-- Web Icon  -->
+    <link rel="shortcut icon" href="https://assets.stickpng.com/images/580b57fcd9996e24bc43c52e.png"
+        type="image/x-icon">
+    <!-- navBar CSS -->
+    <link rel="stylesheet" href="nav.css">
+    <!-- Body CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Footer CSS -->
+    <link rel="stylesheet" href="footer.css">
+</head>
+
+<body>
+    <nav>
+        <ul class="sidebar">
+            <li onclick="hideSidebar()"> <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24"
+                        viewBox="0 -960 960 960" width="24">
+                        <path
+                            d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                    </svg></a> </li>
+            <li> <a href="#"> Animals</a> </li>
+            <li> <a href="#"> Mountains</a> </li>
+            <li> <a href="#"> Nature</a> </li>
+            <li> <a href="#"> Pets</a> </li>
+            <li> <a href="#"> Trees</a> </li>
+            <li> <a href="#"> Weadings</a> </li>
+        </ul>
+        <!-- Normal -->
+        <ul>
+            <li> <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Pinterest-logo.png"
+                        height="40px" alt=""></a> </li>
+            <li class="hideOnMobile"> <a href="#"> Animals</a> </li>
+            <li class="hideOnMobile"> <a href="#"> Mountains</a> </li>
+            <li class="hideOnMobile"> <a href="#"> Nature</a> </li>
+            <li class="hideOnMobile"> <a href="#"> Pets</a> </li>
+            <li class="hideOnMobile"> <a href="#"> Trees</a> </li>
+            <li class="hideOnMobile"> <a href="#"> Weadings</a> </li>
+
+            <li class="menu-button" onclick="showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                        height="26" viewBox="0 -960 960 960" width="26">
+                        <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                    </svg></a></li>
+        </ul>
+    </nav>
+
+    <h1>Search any Image</h1>
+    <!-- Simple Search Box for user input -->
+    <form action="">
+        <input id="search-input" type="text" placeholder=" Search images">
+        <button id="search-button">Search</button>
+    </form>
+    <!-- Search result will be present in this section of the webpage -->
+    <div class="search-results">
+        <!-- Div / Cards for individual image results -->
+        <div class="search-result">
+            <img src="https://images.unsplash.com/photo-1528183429752-a97d0bf99b5a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="Tree at sunset">
+            <!-- User will redireced to the original page by clicking the text -->
+            <a href="https://unsplash.com/photos/green-leafed-tree-surrounded-by-fog-during-daytime-S297j2CsdlM"
+                target="_blank">Tree at sunset</a>
+        </div>
+        <div class="search-result">
+            <img src="https://images.unsplash.com/photo-1620200423727-8127f75d7f53?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="Sunset over Limuru tea farm">
+            <a href="https://unsplash.com/photos/green-grass-field-under-white-clouds-during-daytime-PvwdlXqo85k"
+                target="_blank">Sunset over Limuru tea farm</a>
+        </div>
+        <div class="search-result">
+            <img src="https://images.unsplash.com/photo-1662868687948-df0ccab8f1df?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="An Island Surrounded by Green Sea">
+            <a href="https://unsplash.com/photos/green-leafed-tree-surrounded-by-fog-during-daytime-S297j2CsdlM"
+                target="_blank">A Beautiful Island </a>
+        </div>
+
+
+        <div class="search-result">
+            <img src="https://images.unsplash.com/photo-1682687981907-170c006e3744?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="The World Under The Sea">
+            <a href="https://unsplash.com/photos/a-scuba-diver-swims-over-a-colorful-coral-reef-_tDdlCJIwOA"
+                target="_blank">The World Under The Sea </a>
+        </div>
+
+        <div class="search-result">
+            <img src="https://images.unsplash.com/photo-1697462248408-25479e5acfb0?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="Let's go for a vacation to the US">
+            <a href="https://unsplash.com/photos/a-small-cabin-in-the-middle-of-a-forest-STB9w0fjxxc"
+                target="_blank">Let's go for a vacation in US </a>
+        </div>
+
+        <div class="search-result">
+            <img src="https://images.unsplash.com/photo-1585607344893-43a4bd91169a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="South Indian Culture">
+            <a href="https://unsplash.com/photos/green-leafed-tree-surrounded-by-fog-during-daytime-S297j2CsdlM"
+                target="_blank">South Indian Culture</a>
+        </div>
+    </div>
+    <!-- Will be visible when API will supply contents in multiple pages -->
+    <button id="show-more-button">Show more+</button>
+    <!-- Footer Part from Here  -->
+    <section class="footer">
+
+        <div class="box-container">
+            <div class="box">
+                <h3>Location</h3>
+                <a href="#">INDIA</a>
+                <a href="#">RUSSIA</a>
+                <a href="#">JAPAN</a>
+                <a href="#">USA</a>
+                <a href="#">DUBAI</a>
+                <a href="#">BANGLADESH</a>
+            </div>
+
+            <div class="box">
+                <h3>Quick Links</h3>
+                <a href="#">Animal</a>
+                <a href="#">Mountians</a>
+                <a href="#">Nature</a>
+                <a href="#">Pets</a>
+                <a href="#">Trees</a>
+                <a href="#">Weadings</a>
+            </div>
+            <div class="box">
+                <h3>Contact Us</h3>
+                <a href="#">+91 73xxxxxx98</a>
+                <a href="#">debasishxx@gmail.com</a>
+                <a href="#">www.mywebsite.com</a>
+                <a href="#">Barasat, Kolkata -700125</a>
+                <a href="#">Office - Kolkata, WB</a>
+                <a href="#">Head office - Noida, UP</a>
+            </div>
+            <div class="box">
+                <h3>follow us</h3>
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">Linkedin</a>
+                <a href="#">Pinterest</a>
+                <a href="#">Telegram</a>
+                <a href="#">Youtube</a>
+            </div>
+        </div>
+        <div class="credit">Copyright @2024 by <span>Debasish Barman</span> original website -
+            <small>https://unsplash.com/</small>
+        </div>
+    </section>
+    <!-- JavaScript for accesing images from the original website through API key -->
+    <script src="nav.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
