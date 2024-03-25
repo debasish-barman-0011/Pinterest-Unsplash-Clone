@@ -1,2 +1,3 @@
 # Pinterest-Unsplash-Clone
- Worl's Largest Photo Gallery
+ visit https://pinterest-unsplash.netlify.app/ and explore Worl's Largest Photo Gallery made by Debasish Barman, using HTML, CSS, JavaScript.
+Go and checkout now..!!
