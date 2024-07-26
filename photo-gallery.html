@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery SnapSafari | Enjoy Unlimited Images|</title>
+  <!-- FontAwasome CDN -->
+  <script src="https://kit.fontawesome.com/a39c29d29e.js" crossorigin="anonymous"></script>
+  <!-- Sweet alert CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <!-- Control Icons -->
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <!-- Web Icon  -->
+  <link rel="shortcut icon" href="./images/pinterest.png" type="image/x-icon">
+  <!-- navBar CSS -->
+  <link rel="stylesheet" href="./CSS/nav.css">
+  <!-- Basic CSS -->
+  <link rel="stylesheet" href="./CSS/gallery.css">
+  <!-- Footer CSS -->
+  <link rel="stylesheet" href="./CSS/footer.css">
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      line-height: 1.6;
+      background-color: #9b974114;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Header or Nav -->
+  <header class="header">
+    <a href="index.html" class="logo"><i class="fa-solid fa-yin-yang"> </i> SnapSafari</a>
+    <input type="checkbox" name="" id="check" />
+    <label for="check" class="icons">
+      <i class="bx bx-menu" id="menu-icon"></i>
+      <i class="bx bx-x" id="close-icon"></i>
+    </label>
+    <nav class="navbar">
+      <a href="index.html" style="--i: 1"><i class="fa-solid fa-house"></i> Home</a>
+      <a href="https://dbport.netlify.app/#services" style="--i: 2">Services</a>
+      <a href="https://dbport.netlify.app/#contact" style="--i: 3">Contact</a>
+      <button id="contributeBtn" class="btn" type="button">Buy Me A Coffee <i class="fa-solid fa-mug-saucer"></i>
+      </button>
+    </nav>
+  </header>
+
+  <div class="image-container" id="image-container"></div>
+  <button id="show-more">Show more+</button>
+  <!-- Footer Part from Here  -->
+  <section class="footer">
+
+    <div class="box-container">
+      <div class="box">
+        <h3>Navigation Links</h3>
+        <a href=""> <i class="fa-solid fa-house"></i> Home</a>
+        <a href="https://dbport.netlify.app/#about"> <i class="fa-solid fa-angles-up"></i> About Me </a>
+        <a href="https://dbport.netlify.app/#services"> <i class="fa-solid fa-angles-up"></i> Services</a>
+        <a href="https://dbport.netlify.app/#contact"> <i class="fa-solid fa-angles-up"></i> Contact</a>
+        <a href="https://dbport.netlify.app/#portfolio"> <i class="fa-solid fa-angles-up"></i> Projects</a>
+        <a href=""> <i class="fa-solid fa-angles-up"></i> Privacy</a>
+      </div>
+
+      <div class="box">
+        <h3>Other Projects</h3>
+        <a target="_blank" href="https://dbport.netlify.app/"><i class="fa-solid fa-angles-right"></i>
+          CodeCrafter</a>
+        <a target="_blank" href="https://pure-play.netlify.app/"><i class="fa-solid fa-angles-right"></i>
+          PurePlay</a>
+        <a target="_blank" href="http://fiberflow.great-site.net/"> <i class="fa-solid fa-angles-right"></i>
+          FiberFlow</a>
+        <a target="_blank" href="https://debasish-barman-0011.github.io/Pet-Adoption/"> <i
+            class="fa-solid fa-angles-right"></i>
+          AdoptMeee</a>
+        <a target="_blank" href="https://campus-quest.netlify.app/"> <i class="fa-solid fa-angles-right"></i>
+          CampusQuest</a>
+        <a target="_blank" href="https://downloadme.onrender.com/"> <i class="fa-solid fa-angles-right"></i>
+          DownloadMe</a>
+      </div>
+      <div class="box">
+        <h3>Contact Me</h3>
+        <a href="https://wa.me/9073532270"> <i class="fa-brands fa-square-whatsapp"></i> WhatsApp</a>
+        <a href="mailto:mail4barman@gmail.com"> <i class="fa-solid fa-envelope"></i> Email</a>
+        <a href="https://dbport.netlify.app/#contact"> <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          Website</a>
+      </div>
+      <div class="box">
+        <h3>Follow Me</h3>
+        <a target="_blank" href="https://www.facebook.com/mr.debasish.barman/"> <i class="fa-brands fa-facebook"></i>
+          Facebook</a>
+        <a target="_blank" href="https://www.instagram.com/debasish_barman0011/"> <i class="fa-brands fa-instagram"></i>
+          Instagram</a>
+        <a target="_blank" href="https://www.linkedin.com/in/debasish-barman-923806280/"> <i
+            class="fa-brands fa-linkedin"></i>
+          Linkedin</a>
+
+      </div>
+    </div>
+
+  </section>
+  <!-- JavaScripts -->
+  <script src="./Js/gallery.js"></script>
+  <script src="./Js/nav.js"></script>
+  <script src="./Js/QR.js"></script>
+</body>
+
+</html>

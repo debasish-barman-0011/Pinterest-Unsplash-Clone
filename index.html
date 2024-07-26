@@ -4,50 +4,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>World's largest Photo Gallery |Unsplash & Pinterest</title>
+    <title>World's largest Photo Gallery |SnapSafari - Home|</title>
+    <!-- Sweet Alert CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- FontAwasome CDN -->
+    <script src="https://kit.fontawesome.com/a39c29d29e.js" crossorigin="anonymous"></script>
+    <!-- Control Icons -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
     <!-- Web Icon  -->
-    <link rel="shortcut icon" href="https://assets.stickpng.com/images/580b57fcd9996e24bc43c52e.png"
-        type="image/x-icon">
+    <link rel="shortcut icon" href="./images/pinterest.png" type="image/x-icon">
     <!-- navBar CSS -->
-    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="./CSS/nav.css">
     <!-- Body CSS -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./CSS/style.css">
     <!-- Footer CSS -->
-    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="./CSS/footer.css">
+
 </head>
 
 <body>
-    <nav>
-        <ul class="sidebar">
-            <li onclick="hideSidebar()"> <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24"
-                        viewBox="0 -960 960 960" width="24">
-                        <path
-                            d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
-                    </svg></a> </li>
-            <li> <a href="#"> Animals</a> </li>
-            <li> <a href="#"> Mountains</a> </li>
-            <li> <a href="#"> Nature</a> </li>
-            <li> <a href="#"> Pets</a> </li>
-            <li> <a href="#"> Trees</a> </li>
-            <li> <a href="#"> Weadings</a> </li>
-        </ul>
-        <!-- Normal -->
-        <ul>
-            <li> <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Pinterest-logo.png"
-                        height="40px" alt=""></a> </li>
-            <li class="hideOnMobile"> <a href="#"> Animals</a> </li>
-            <li class="hideOnMobile"> <a href="#"> Mountains</a> </li>
-            <li class="hideOnMobile"> <a href="#"> Nature</a> </li>
-            <li class="hideOnMobile"> <a href="#"> Pets</a> </li>
-            <li class="hideOnMobile"> <a href="#"> Trees</a> </li>
-            <li class="hideOnMobile"> <a href="#"> Weadings</a> </li>
-
-            <li class="menu-button" onclick="showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg"
-                        height="26" viewBox="0 -960 960 960" width="26">
-                        <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
-                    </svg></a></li>
-        </ul>
-    </nav>
+    <!-- Header or Nav -->
+    <header class="header">
+        <a href="" class="logo"><i class="fa-solid fa-yin-yang"> </i> SnapSafari</a>
+        <input type="checkbox" name="" id="check" />
+        <label for="check" class="icons">
+            <i class="bx bx-menu" id="menu-icon"></i>
+            <i class="bx bx-x" id="close-icon"></i>
+        </label>
+        <nav class="navbar">
+            <a href="photo-gallery.html" style="--i: 1">Gallery</a>
+            <a href="https://dbport.netlify.app/#services" style="--i: 2">Services</a>
+            <a href="https://dbport.netlify.app/#contact" style="--i: 3">Contact</a>
+            <button id="contributeBtn" class="btn" type="button">Buy Me A Coffee <i class="fa-solid fa-mug-saucer"></i>
+            </button>
+        </nav>
+    </header>
 
     <h1>Search any Image</h1>
     <!-- Simple Search Box for user input -->
@@ -69,7 +60,7 @@
             <img src="https://images.unsplash.com/photo-1620200423727-8127f75d7f53?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 alt="Sunset over Limuru tea farm">
             <a href="https://unsplash.com/photos/green-grass-field-under-white-clouds-during-daytime-PvwdlXqo85k"
-                target="_blank">Sunset over Limuru tea farm</a>
+                target="_blank">Sunset over tea farm</a>
         </div>
         <div class="search-result">
             <img src="https://images.unsplash.com/photo-1662868687948-df0ccab8f1df?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
@@ -83,14 +74,14 @@
             <img src="https://images.unsplash.com/photo-1682687981907-170c006e3744?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 alt="The World Under The Sea">
             <a href="https://unsplash.com/photos/a-scuba-diver-swims-over-a-colorful-coral-reef-_tDdlCJIwOA"
-                target="_blank">The World Under The Sea </a>
+                target="_blank">World Under The Sea </a>
         </div>
 
         <div class="search-result">
             <img src="https://images.unsplash.com/photo-1697462248408-25479e5acfb0?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 alt="Let's go for a vacation to the US">
             <a href="https://unsplash.com/photos/a-small-cabin-in-the-middle-of-a-forest-STB9w0fjxxc"
-                target="_blank">Let's go for a vacation in US </a>
+                target="_blank">Let's go for tour</a>
         </div>
 
         <div class="search-result">
@@ -107,50 +98,58 @@
 
         <div class="box-container">
             <div class="box">
-                <h3>Location</h3>
-                <a href="#">INDIA</a>
-                <a href="#">RUSSIA</a>
-                <a href="#">JAPAN</a>
-                <a href="#">USA</a>
-                <a href="#">DUBAI</a>
-                <a href="#">BANGLADESH</a>
+                <h3>Navigation Links</h3>
+                <a href=""> <i class="fa-solid fa-house"></i> Home</a>
+                <a href="photo-gallery.html"> <i class="fa-solid fa-angles-up"></i> Gallery </a>
+                <a href="https://dbport.netlify.app/#services"> <i class="fa-solid fa-angles-up"></i> Services</a>
+                <a href="https://dbport.netlify.app/#contact"> <i class="fa-solid fa-angles-up"></i> Contact</a>
+                <a href="https://dbport.netlify.app/#portfolio"> <i class="fa-solid fa-angles-up"></i> Projects</a>
+                <a href=""> <i class="fa-solid fa-angles-up"></i> Privacy</a>
             </div>
 
             <div class="box">
-                <h3>Quick Links</h3>
-                <a href="#">Animal</a>
-                <a href="#">Mountians</a>
-                <a href="#">Nature</a>
-                <a href="#">Pets</a>
-                <a href="#">Trees</a>
-                <a href="#">Weadings</a>
+                <h3>Other Projects</h3>
+                <a target="_blank" href="https://dbport.netlify.app/"><i class="fa-solid fa-angles-right"></i>
+                    CodeCrafter</a>
+                <a target="_blank" href="https://pure-play.netlify.app/"><i class="fa-solid fa-angles-right"></i>
+                    PurePlay</a>
+                <a target="_blank" href="http://fiberflow.great-site.net/"> <i class="fa-solid fa-angles-right"></i>
+                    FiberFlow</a>
+                <a target="_blank" href="https://debasish-barman-0011.github.io/Pet-Adoption/"> <i
+                        class="fa-solid fa-angles-right"></i>
+                    AdoptMeee</a>
+                <a target="_blank" href="https://campus-quest.netlify.app/"> <i class="fa-solid fa-angles-right"></i>
+                    CampusQuest</a>
+                <a target="_blank" href="https://downloadme.onrender.com/"> <i class="fa-solid fa-angles-right"></i>
+                    DownloadMe</a>
             </div>
             <div class="box">
-                <h3>Contact Us</h3>
-                <a href="#">+91 73xxxxxx98</a>
-                <a href="#">debasishxx@gmail.com</a>
-                <a href="#">www.mywebsite.com</a>
-                <a href="#">Barasat, Kolkata -700125</a>
-                <a href="#">Office - Kolkata, WB</a>
-                <a href="#">Head office - Noida, UP</a>
+                <h3>Contact Me</h3>
+                <a href="https://wa.me/9073532270"> <i class="fa-brands fa-square-whatsapp"></i> WhatsApp</a>
+                <a href="mailto:mail4barman@gmail.com"> <i class="fa-solid fa-envelope"></i> Email</a>
+                <a href="https://dbport.netlify.app/#contact"> <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    Website</a>
             </div>
             <div class="box">
-                <h3>follow us</h3>
-                <a href="#">Facebook</a>
-                <a href="#">Instagram</a>
-                <a href="#">Linkedin</a>
-                <a href="#">Pinterest</a>
-                <a href="#">Telegram</a>
-                <a href="#">Youtube</a>
+                <h3>Follow Me</h3>
+                <a target="_blank" href="https://www.facebook.com/mr.debasish.barman/"> <i
+                        class="fa-brands fa-facebook"></i>
+                    Facebook</a>
+                <a target="_blank" href="https://www.instagram.com/debasish_barman0011/"> <i
+                        class="fa-brands fa-instagram"></i>
+                    Instagram</a>
+                <a target="_blank" href="https://www.linkedin.com/in/debasish-barman-923806280/"> <i
+                        class="fa-brands fa-linkedin"></i>
+                    Linkedin</a>
+
             </div>
         </div>
-        <div class="credit">Copyright @2024 by <span>Debasish Barman</span> original website -
-            <small>https://unsplash.com/</small>
-        </div>
+
     </section>
-    <!-- JavaScript for accesing images from the original website through API key -->
-    <script src="nav.js"></script>
-    <script src="script.js"></script>
+    <!-- JavaScript -->
+    <script src="./js/nav.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./Js/QR.js"></script>
 </body>
 
 </html>
