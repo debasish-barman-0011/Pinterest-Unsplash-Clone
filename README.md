@@ -30,7 +30,7 @@ Experience SnapSafari in action: [SnapSafari Live Demo](https://snap-safari.netl
 2. Click on "Search" or press Enter to get your images.
 3. To view any image in full size, click the "Title of the Image" from there you can download it for free.
 4. Click on Gallery Menu on the Navbar and enjoy the endless Image Gallery Feed on your device.
-5. If got impressed by my task feel free to support me by clicking on By Me A Coffee button. (Min. INR 10 is acceptable)
+5. If got impressed by my task feel free to support me by clicking on Buy Me A Coffee button. (Min. INR 10 is acceptable)
 
 ## 🎨 Customization
 
