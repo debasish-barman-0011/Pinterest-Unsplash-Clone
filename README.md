@@ -13,7 +13,7 @@ Discover captivating photos curated for educational use. Powered by HTML, CSS, a
 
 ## 🚀 Live Demo
 
-Experience the Todo App in action: [SnapSafari Live Demo]([https://snap-safari.netlify.app/](https://snap-safari.netlify.app/)
+Experience SnapSafari in action: [SnapSafari Live Demo](https://snap-safari.netlify.app/)
 
 ## 🛠️ Technologies Used
 
